@@ -10,6 +10,8 @@ const PageResult = () => {
     return (
 <div className='flex-container'>
 
+
+
         <div className="flex-items-gauche">
 
             <div className='flex-container-resultat' >  
@@ -37,10 +39,12 @@ const PageResult = () => {
             </div>
 
         </div>   
-                   
-            <div class="flex-items-droite">
+        
+        <div class="flex-items-droite">
                 <Logo />
-            </div>      
+            </div> 
+                   
+             
     </div>
     );
 };
