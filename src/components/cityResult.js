@@ -3,7 +3,7 @@ import React from 'react';
 const CityResult = () => {
     return (
         <div>
-            
+              Aix les Bains
         </div>
     );
 };

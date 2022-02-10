@@ -1,0 +1,59 @@
+img{
+    max-width : 50%;
+    height : auto;   
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+    border: red solid 2px;
+    margin: 5px;
+    padding: 5px;
+  }
+
+
+  .flex-items-gauche {
+    display: block;
+border: green solid 1px;
+    flex-basis: auto;
+    align-self: auto;
+    width: 70%;
+    margin: 5px;
+  }
+
+  .flex-items-droite {
+    display: block;
+border:violet solid 1px;
+    flex-basis: auto;
+    align-self: auto;
+    width: 30%;
+   margin: 5px;
+  }
+
+
+  .flex-container-resultat {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    border: yellow solid 1px;
+    margin: 5px;
+  }
+
+  .flex-items-resultat {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+    border: blue solid 1px;
+    margin: 5px;
+    width: 100%;
+  }

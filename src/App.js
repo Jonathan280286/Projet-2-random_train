@@ -1,6 +1,6 @@
 import './App.css';
-import Logo from './components/logo';
-import Accueil from './Pages/accueil';
+
+import PageResult from './Pages/pageResult';
 
 
 
@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       
- <Accueil />
+
+ <PageResult />
     </div>
   );
 }
