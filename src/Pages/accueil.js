@@ -7,7 +7,9 @@ import  Logo from '../components/logo'
 const Accueil = () => {
     return (
         <div className="container_accueil">
+
            <div className="item__accueil__logo">  
+
                 <div className="accueil__logo">                
                     <Logo />
                 </div>
@@ -21,9 +23,11 @@ const Accueil = () => {
                         </select>
                     </div>
             </div>
-            <div className="items_accueil">
+
+            <div className="items_accueil__carte">
                 <img   className="image-carte" src='./Images/carteFrance.png' alt='image logo' /> 
             </div>
+
         </div>
     );
 };
