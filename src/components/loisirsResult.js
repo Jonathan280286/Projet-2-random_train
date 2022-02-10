@@ -3,7 +3,7 @@ import React from 'react';
 const LoisirsResult = () => {
     return (
         <div>
-              Restaurant 
+              Components - Loisirs
         </div>
     );
 };

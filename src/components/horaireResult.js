@@ -3,7 +3,7 @@ import React from 'react';
 const HoraireResult = () => {
     return (
         <div>
-            Réserver un train - Les Horaires 
+            Components - Réserver un train - Horaires result
         </div>
     );
 };

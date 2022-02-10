@@ -3,7 +3,7 @@ import React from 'react';
 const MeteoResult = () => {
     return (
         <div>
-             Météo  
+             Components - Météo  
         </div>
     );
 };
