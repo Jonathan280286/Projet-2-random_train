@@ -18,4 +18,7 @@ border: 1px solid blue;
     border: solid green 3px
 }
 
-
+.image-carte{
+    max-width: 80%;
+    height: auto;
+}
