@@ -18,7 +18,7 @@ const Accueil = () => {
                         <label for="select-city">Choisissez votre gare de départ :</label><br></br>
 
                         <select name="city" id="select-city">
-                            <option value="">-----</option>
+                            <option value="">Ville</option>
                             <option value="dog">Paris</option>
                         </select>
                     </div>
