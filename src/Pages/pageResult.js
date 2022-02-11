@@ -40,7 +40,7 @@ const PageResult = () => {
 
         </div>   
         
-        <div class="flex-items-droite">
+        <div className="flex-items-droite">
                 <Logo />
             </div> 
                    
