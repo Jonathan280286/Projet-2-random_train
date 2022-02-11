@@ -1,7 +1,7 @@
 import React from 'react';
 import Logo from '../components/logo';
 
-const accueil = () => {
+const Accueil = () => {
     return (
         <div>
             <Logo />
@@ -9,4 +9,4 @@ const accueil = () => {
     );
 };
 
-export default accueil;
+export default Accueil;
