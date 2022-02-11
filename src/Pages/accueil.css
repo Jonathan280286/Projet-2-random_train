@@ -3,22 +3,74 @@
 }
 .item__accueil__logo{
 display: block;
+text-align: center;
 width: 40%;
-border: 3px solid red;
+/* border: 3px solid red; */
 }
 
 .items_accueil__carte{
     margin-top: 100px;
     display: block;
 width: 60%;
-border: 1px solid blue;
+/* border: 1px solid blue; */
 }
 
 .accueil__select{
-    border: solid green 3px
+    /* border: solid green 3px */
 }
 
 .image-carte{
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
+
+.accueil__logo{
+    margin: 300px 0 150px 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+label{
+    font-size: 4em;
+}
+    
+#select-city{
+    margin-top: 40px;
+    font-size: 4em;
+}
+
+@media screen and (max-width: 1100px){ 
+
+    .item__accueil__logo{
+        width: 100%;
+        display: block;
+        align-items: center;
+     
+    }
+
+    .container_accueil{
+        display: block;
+        margin: auto ;
+    }
+    .accueil__logo{
+        margin: 50px 0 25px 0;
+    }
+
+    #select-city{
+        font-size: 2em;
+    }
+
+label{
+    font-size: 3em;
+}   
+    .items_accueil__carte{
+width: 100%;
+    }
+}
+
+
+
+

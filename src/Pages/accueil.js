@@ -15,7 +15,7 @@ const Accueil = () => {
                 </div>
 
                     <div className='accueil__select'>
-                        <label for="select-city">Choisissez votre gare de départ :</label>
+                        <label for="select-city">Choisissez votre gare de départ :</label><br></br>
 
                         <select name="city" id="select-city">
                             <option value="">-----</option>
