@@ -1,6 +1,7 @@
 import './App.css';
 import Logo from './components/logo';
 import Accueil from './Pages/accueil';
+import PageGenerateur from './Pages/pageGenerateur';
 
 
 
@@ -8,7 +9,8 @@ function App() {
   return (
     <div className="App">
       
- <Accueil />
+ <PageGenerateur />
+ 
     </div>
   );
 }
