@@ -1,7 +1,9 @@
-import React from 'react';
+import './horaireResult.css'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
-
-const [horaires, setGetHoraires]=useState("")
+function HoraireResult() {
+  const [horaires, setGetHoraires]=useState("")
 
 useEffect(() =>{
     axios
@@ -18,6 +20,8 @@ useEffect(() =>{
             <img   src='./Images/horaire.jpg' alt='horaire train' /> 
         </div>
     );
+
+}
 
 export default HoraireResult;
 
