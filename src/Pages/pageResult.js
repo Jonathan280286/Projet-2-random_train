@@ -8,44 +8,45 @@ import LoisirsResult from '../components/loisirsResult'
 
 const PageResult = () => {
     return (
-<div className='flex-container'>
+        <div className='imageDepart'>
+            <div className='flex-container'>
 
 
 
-        <div className="flex-items-gauche">
+                <div className="flex-items-gauche">
 
-            <div className='flex-container-resultat' >  
+                    <div className='flex-container-resultat' >
 
-                <div className='flex-items-resultat '  >
-                    <CityResult />
+                        <div className='flex-items-resultat '  >
+                            <CityResult />
+                        </div>
+
+                        <div className='flex-items-resultat '  >
+                            <HoraireResult />
+                        </div>
+                    </div>
+
+                    <div className='flex-container-resultat' >
+
+                        <div className='flex-items-resultat '  >
+                            <LoisirsResult />
+                        </div>
+
+
+                        <div className='flex-items-resultat '  >
+                            <MeteoResult />
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div className='flex-items-resultat '  >
-                    <HoraireResult />
+                <div className="flex-items-droite">
+                    <Logo />
                 </div>
+
             </div>
-
-            <div className='flex-container-resultat' >
-
-                <div className='flex-items-resultat '  >
-                    <LoisirsResult />
-                </div>
-
-
-                <div className='flex-items-resultat '  >
-                    <MeteoResult />
-                </div>
-
-            </div>
-
-        </div>   
-        
-        <div className="flex-items-droite">
-                <Logo />
-            </div> 
-                   
-             
-    </div>
+        </div>
     );
 };
 
