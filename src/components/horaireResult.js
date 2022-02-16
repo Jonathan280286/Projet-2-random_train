@@ -7,22 +7,33 @@ function HoraireResult() {
   const [horaires, setHoraires] = useState("")
 
   useEffect(() => {
-    axios.get('https://8703df2c-baa8-49b3-a102-d2482abfb49a@api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:87391003/departures?datetime=20220131T160312')
+    axios.get('https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:87391003/departures?datetime=20220131T160312', {
+      headers
+        : { Authorization: "8703df2c-baa8-49b3-a102-d2482abfb49a" }
+    })
       .then((response) => {
-        console.log(response.data)
-        setHoraires(response.data.display_informations[0])
+
+        setHoraires(response.data.departures)
+        console.log(response.data.departures)
       })
   }, [])
-
   return (
-    <div>
-      <div className='titre-horaireResult'><h2>Les prochains horaires pour votre destination</h2></div>
-      <p><h3>Labels : </h3>{horaires.labels}</p>
-      <p><h3>N° du train :</h3>{horaires.trip_short_name}</p>
-      <img src='./Images/horaire.jpg' alt='horaire train' />
-    </div>
+    <div className='departures'>
+      {horaires.length > 0 &&
+        <ul>
+          {horaires.filter((filtre) => filtre === horaires[0] || filtre === horaires[2]).map(departure => {
+            return <li key={departure.display_informations.trip_short_name}>
+              <h4 className="horaireResult_depart">Prochains départs : {departure.stop_point.name}</h4>
+              <h4>Gare d'arrivée : {departure.display_informations.direction}</h4>
+              <h4>Type de train : {departure.display_informations.network}</h4>
+              <h4>Numéro du train : {departure.display_informations.trip_short_name}</h4>
+              <h4>Heure de départ : {departure.stop_date_time.departure_date_time.slice(9)}</h4>
+            </li>
+          })}
+        </ul>
+      }
+    </div >
   );
-
 }
 
 export default HoraireResult;

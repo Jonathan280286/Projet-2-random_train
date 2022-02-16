@@ -1,0 +1,8 @@
+li{
+    list-style-type: none;
+}
+.horaireResult_depart{
+    color: blue;
+    border-color: blueviolet 2px solid;
+    margin: 5px;
+}
