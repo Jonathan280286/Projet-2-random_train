@@ -1,5 +1,4 @@
 import './App.css';
-import Logo from './components/logo';
 import Accueil from './Pages/accueil';
 
 
@@ -7,8 +6,7 @@ import Accueil from './Pages/accueil';
 function App() {
   return (
     <div className="App">
-      
- <Accueil />
+      <Accueil />
     </div>
   );
 }
