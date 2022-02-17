@@ -1,15 +1,12 @@
 import './App.css';
-
-import PageResult from './Pages/pageResult';
+import Accueil from './Pages/accueil';
 
 
 
 function App() {
   return (
     <div className="App">
-      
-
- <PageResult />
+      <Accueil />
     </div>
   );
 }
