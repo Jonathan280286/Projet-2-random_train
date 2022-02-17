@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 function HoraireResult() {
 
+
   const [horaires, setHoraires] = useState("")
 
   useEffect(() => {
@@ -19,6 +20,7 @@ function HoraireResult() {
   }, [])
   return (
     <div className='departures'>
+
       <span className="titre_depart">Prochains départs de trains</span>
       {horaires.length > 0 &&
         <ul>
@@ -33,6 +35,7 @@ function HoraireResult() {
           })}
         </ul>
       }
+      
     </div >
   );
 }

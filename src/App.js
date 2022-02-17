@@ -5,13 +5,18 @@ import PageResult from './Pages/pageResult';
 
 
 
+
 function App() {
   return (
+    
     <div className="App">
-      <Accueil />
-      <PageResult />
-      <PageGenerateur />
+      
+          <Accueil />
+          <PageResult />
+          <PageGenerateur />
+      
     </div>
+  
   );
 }
 
