@@ -5,7 +5,7 @@ import Tournicoti from '../components/tournicoti.js'
 import '../components/tournicoti.css'
 
 
-const pageGenerateur = () => {
+const PageGenerateur = () => {
     return (
          <div className='imageDepart'>
               
@@ -20,4 +20,4 @@ const pageGenerateur = () => {
     );
 };
 
-export default pageGenerateur;
+export default PageGenerateur;
