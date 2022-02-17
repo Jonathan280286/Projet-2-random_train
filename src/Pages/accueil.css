@@ -46,7 +46,7 @@ label{
     padding-left: 20px;
 }
 
-@media screen and (max-width: 1700px){ 
+@media screen and (max-width: 1100px){ 
 
     .item__accueil__logo{
         width: 100%;
