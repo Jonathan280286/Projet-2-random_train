@@ -1,0 +1,33 @@
+li{
+    list-style-type: none;
+}
+.horaireResult_depart{
+    color: blue;
+    border-color: blueviolet 2px solid;
+    margin: 5px;
+}
+.input{
+    font: inherit;
+    letter-spacing: inherit;
+    color: currentcolor;
+    box-sizing: content-box;
+    padding: 2px;
+    display: block;
+    min-width: 0px;
+    width: 90%;
+    animation-name: mui-auto-fill-cancel;
+    border-top: 1px dashed transparent;
+    border-left: 1px dashed transparent;
+    border-right: 1px dashed transparent;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+}
+.titre_depart{
+    font-size: 1.2rem;
+    text-transform: none;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 5px;
+    margin: 8px;
+}

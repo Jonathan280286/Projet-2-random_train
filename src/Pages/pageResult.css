@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: "Avenir", "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #333333;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+.imageDepart {
+  background-image: url('../../public/Images/aix_result.jpg');
+  background-position: center;
+  min-width: 99%;
+}
+
+.imageDepart>div {
+  height: 100vh;
+  width: 99%
+}
+
+img {
+  max-width: 50%;
+  height: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.flex-items-gauche {
+  flex-basis: 68%;
+  margin: 5px;
+  align-items: center;
+}
+
+.flex-items-droite {
+  flex-basis: 30%;
+  margin: 5px;
+}
+
+.flex-container-resultat {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 5px;
+}
+
+.flex-items-resultat {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+  margin: 5px;
+  width: 45%;
+  border-radius: 30px;
+  background-color: white;
+}
+
+/* Medium devices (tablets, 999px)*/
+@media (max-width: 999px) {
+  .flex-items-droite {
+    flex-basis: 100%;
+  }
+
+  .flex-items-gauche {
+    flex-basis: 100%;
+  }
+
+  .flex-items-resultat {
+    width: 100%;
+  }
+}
