@@ -26,7 +26,7 @@ function HoraireResult() {
             return <li key={departure.display_informations.trip_short_name}>
               <h4 className="horaireResult_depart">{departure.stop_point.name}</h4>
               <h4 className='input'>Gare d'arrivée : {departure.display_informations.direction}</h4>
-              <h4 className='input'>Mode : {departure.display_informations.network}</h4>
+              <h4 className='input'>Train : {departure.display_informations.network}</h4>
               <h4 className='input'>Numéro du train : {departure.display_informations.trip_short_name}</h4>
               <h4 className='input'>Heure de départ : {departure.stop_date_time.departure_date_time.slice(9).split('').splice(0, 4).concat(' min')}</h4>
             </li>

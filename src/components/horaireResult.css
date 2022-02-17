@@ -11,7 +11,7 @@ li{
     letter-spacing: inherit;
     color: currentcolor;
     box-sizing: content-box;
-    padding: 5px;
+    padding: 2px;
     display: block;
     min-width: 0px;
     width: 90%;
@@ -28,5 +28,6 @@ li{
     display: flex;
     -webkit-box-align: center;
     align-items: center;
-    padding: 16px;
+    padding: 5px;
+    margin: 8px;
 }

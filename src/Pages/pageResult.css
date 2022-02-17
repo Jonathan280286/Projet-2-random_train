@@ -11,21 +11,18 @@ body {
 .imageDepart {
   background-image: url('../../public/Images/aix_result.jpg');
   background-position: center;
-  min-width: 100%;
+  min-width: 99%;
 }
 
 .imageDepart>div {
   height: 100vh;
-  width: 100%
+  width: 99%
 }
-
 
 img {
   max-width: 50%;
   height: auto;
 }
-
-
 
 .flex-container {
   display: flex;
@@ -36,17 +33,16 @@ img {
   padding: 5px;
 }
 
-
 .flex-items-gauche {
   flex-basis: 68%;
   margin: 5px;
+  align-items: center;
 }
 
 .flex-items-droite {
   flex-basis: 30%;
   margin: 5px;
 }
-
 
 .flex-container-resultat {
   display: flex;
@@ -69,8 +65,6 @@ img {
   background-color: white;
 }
 
-
-
 /* Medium devices (tablets, 999px)*/
 @media (max-width: 999px) {
   .flex-items-droite {
@@ -79,7 +73,6 @@ img {
 
   .flex-items-gauche {
     flex-basis: 100%;
-
   }
 
   .flex-items-resultat {
