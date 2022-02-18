@@ -11,39 +11,39 @@ const PageResult = () => {
         <div className='imageDepart'>
             <div className='flex-container'>
 
-
+            <div className="flex-items-droite">
+                    <Logo />
+                </div>
 
                 <div className="flex-items-gauche">
 
                     <div className='flex-container-resultat' >
 
                         <div className='flex-items-resultat '  >
-                            <CityResult />
+                             <HoraireResult /> 
                         </div>
 
                         <div className='flex-items-resultat '  >
-                            <HoraireResult />
+                          <CityResult />
                         </div>
                     </div>
 
                     <div className='flex-container-resultat' >
 
                         <div className='flex-items-resultat '  >
-                            <LoisirsResult />
+                             <MeteoResult /> 
                         </div>
 
 
                         <div className='flex-items-resultat '  >
-                            <MeteoResult />
+                          <LoisirsResult />
                         </div>
 
                     </div>
 
                 </div>
 
-                <div className="flex-items-droite">
-                    <Logo />
-                </div>
+               
 
             </div>
         </div>
