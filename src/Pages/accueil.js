@@ -39,14 +39,20 @@ const Accueil = () => {
 
                         <select onChange={handleChangeInput}  name="city" id="select-city">
                             <option value="City">Ville</option>
+                            <option value="87391003">Gare de Montparnasse</option>
                             <option value="PLY">Paris gare de Lyon</option>
-                            <option value="MTP">Paris gare de Montparnasse</option>
+                            <option value="LE">Gare de Lille</option>
+                            <option value="NS">Gare de Nantes</option>
+                            <option value="MSC">Gare de Marseille</option>
+                            <option value="TLE">Gare de Toulouse</option>
+                            <option value="MTP">Gare de Montpellier</option>
+                            <option value="LYD">Lyon Part-Dieu</option>
                         </select>
                         
                     </div>
                     <form>  
         
-        <h1>{title}</h1>
+        <h3 className='codeGare'>{title}</h3>
     </form>
             </div>
 
