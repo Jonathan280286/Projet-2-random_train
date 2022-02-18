@@ -6,15 +6,15 @@ import PageResult from './Pages/pageResult';
 
 
 
+
 function App() {
   return (
     
     <div className="App">
       
           <Accueil />
-    
           <PageGenerateur />
-          <PageResult />
+          <PageResult  liaison="Prochains Trains" />
       
     </div>
   

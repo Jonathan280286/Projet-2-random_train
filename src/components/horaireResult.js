@@ -2,6 +2,7 @@ import './horaireResult.css'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 
+/*mise en place props en liaison avec App.j*/
 function HoraireResult(props) {
 
   const [horaires, setHoraires] = useState([])
@@ -20,15 +21,16 @@ function HoraireResult(props) {
 
 /* Fonction pour trier l'horaire de départ */
   const transformHoraire = (heure) => {
-    return heure.slice(9).split('').splice(0, 4).concat(' min').join("").replace(/\B(?=(\d{2})+(?!\d))/g, "h");
+    return heure.slice(9,-2).replace(/\B(?=(\d{2})+(?!\d))/g, "h").concat(' min');
   }
   return (
     <div className='departures'>
-      <span className="titre_depart">Prochains départs de trains</span>
+      <span className="titre_depart">{props.liaison_n2}</span>
       {horaires.length > 0 &&
         <ul>
           {horaires.filter((transilien) => transilien.display_informations.code !== "N").filter((filtre, index) => index === 0 || index === 1).map((departure) => {
             return        <li key={departure.display_informations.trip_short_name}>
+
               <h4 className="horaireResult_depart">{departure.stop_point.name}</h4>
               <h4 className='input'>Gare d'arrivée : {departure.display_informations.direction}</h4>
               <h4 className='input'>Train : {departure.display_informations.network}</h4>
