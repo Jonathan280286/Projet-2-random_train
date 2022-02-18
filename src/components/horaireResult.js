@@ -20,7 +20,7 @@ function HoraireResult(props) {
 
 /* Fonction pour trier l'horaire de départ */
   const transformHoraire = (heure) => {
-    return heure.slice(9).split('').splice(0, 4).concat(' min').toString().replace(/\B(?=(\d{5})+(?!\d))/g, "h");
+    return heure.slice(9).split('').splice(0, 4).concat(' min').join("").replace(/\B(?=(\d{2})+(?!\d))/g, "h");
   }
   return (
     <div className='departures'>

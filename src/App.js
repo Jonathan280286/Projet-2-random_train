@@ -12,8 +12,9 @@ function App() {
     <div className="App">
       
           <Accueil />
-          <PageResult />
+    
           <PageGenerateur />
+          <PageResult />
       
     </div>
   
