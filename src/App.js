@@ -8,9 +8,9 @@ import PageResult from './Pages/pageResult';
 function App() {
   return (
     <div className="App">
-      <Accueil />
+      
       <PageResult />
-      <PageGenerateur />
+      
     </div>
   );
 }
