@@ -4,6 +4,7 @@ import PageGenerateur from './Pages/pageGenerateur';
 import PageResult from './Pages/pageResult';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import NotFound from './components/NotFound';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <div className="App">
       <Navbar /> 
         <Routes>
-        <Route path="/" element={<Accueil/>} />
+        <Route exact path="/" element={<Accueil/>} />
+        <Route path='/404' element={<NotFound/>} />
         <Route path="/PageGenerateur" element={<PageGenerateur/>} />
         <Route path="/PageResult" element={<PageResult liaison="Prochains Trains"/>} />
         </Routes>

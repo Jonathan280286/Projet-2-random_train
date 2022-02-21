@@ -6,9 +6,10 @@ import React, { useEffect, useState } from 'react';
 function HoraireResult(props) {
 
   const [horaires, setHoraires] = useState([])
+  const [gareDepart, setGareDepart] = useState("87391003") 
 
   useEffect(() => {
-    axios.get('https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:87391003/departures?datetime=20220131T160312', {
+    axios.get(`https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:${gareDepart}/departures?datetime=20220131T160312`, {
       headers
         : { Authorization: "8703df2c-baa8-49b3-a102-d2482abfb49a" }
     })
