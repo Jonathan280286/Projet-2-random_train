@@ -20,7 +20,7 @@ const PageResult = (props) => {
                     <div className='flex-container-resultat' >
 
                         <div className='flex-items-resultat '  >
-                             <HoraireResult liaison_n2={props.liaison} /> 
+                             <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} /> 
                         </div>
 
                         <div className='flex-items-resultat '  >

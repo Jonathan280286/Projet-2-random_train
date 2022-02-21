@@ -25,13 +25,13 @@ const Accueil = (props) => {
                         id="select-city">
                         <option value="City">Ville</option>
                         <option value="87391003">Gare de Montparnasse</option>
-                        <option value="PLY">Paris gare de Lyon</option>
-                        <option value="LE">Gare de Lille</option>
-                        <option value="NS">Gare de Nantes</option>
-                        <option value="MSC">Gare de Marseille</option>
-                        <option value="TLE">Gare de Toulouse</option>
-                        <option value="MTP">Gare de Montpellier</option>
-                        <option value="LYD">Lyon Part-Dieu</option>
+                        <option value="87686006">Paris gare de Lyon</option>
+                        <option value="87286005">Gare de Lille Flandres</option>
+                        <option value="87481002">Gare de Nantes</option>
+                        <option value="87751008">Gare de Marseille</option>
+                        <option value="87611004">Gare de Toulouse</option>
+                        <option value="87688887">Gare de Montpellier</option>
+                        <option value="87723197">Lyon Part-Dieu</option>
                     </select>
 
                 </div>

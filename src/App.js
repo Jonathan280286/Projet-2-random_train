@@ -8,6 +8,7 @@ import NotFound from './components/NotFound';
 import { useState } from 'react';
 
 function App(){
+  /* je joins inputGare - departStation de accueil.js et app.js */
 const [departStation, setdepartStation] = useState(" ")
 const inputGare = (value) => {
   setdepartStation(value)
@@ -22,7 +23,7 @@ const inputGare = (value) => {
         {/*Page 404 avec */}
         <Route path="*" element={<NotFound />} />
         <Route path="/PageGenerateur" element={<PageGenerateur departStation={departStation} />} />
-        <Route path="/PageResult" element={<PageResult liaison="Prochains Trains" />}  />
+        <Route path="/PageResult" element={<PageResult liaison="Prochains Trains" departStation2={departStation} />}  />
       </Routes>
     </div>
   );
