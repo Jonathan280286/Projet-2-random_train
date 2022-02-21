@@ -5,14 +5,15 @@ import Tournicoti from '../components/tournicoti.js'
 import '../components/tournicoti.css'
 
 
-const PageGenerateur = () => {
+const PageGenerateur = (props) => {
     return (
          <div className='imageDepart'>
               
             <div className='containerA'> 
                 <Logo/>
                 <Tournicoti/>
-                <button className='bouttonGenerateur'  >Générer votre destination</button>
+                <button className='bouttonGenerateur'>Générer votre destination</button>
+                <h1>{props.inputGare}</h1>
                 
             </div>
         </div>
