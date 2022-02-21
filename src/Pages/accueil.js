@@ -26,6 +26,7 @@ const Accueil = () => {
    
    
     return (
+        
         <div className="container_accueil">
 
            <div className="item__accueil__logo">  
