@@ -9,7 +9,7 @@ const PageGenerateur = (props) => {
 const navigate=useNavigate()
 
 const generateur = () => {
-  navigate("./pageResult")
+  navigate("/pageResult")
 }
     return (
          <div className='imageDepart'>
