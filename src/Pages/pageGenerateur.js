@@ -12,8 +12,8 @@ const PageGenerateur = (props) => {
               
             <div className='containerA'> 
                 <Logo/>
-                {/* Récupération du code gare venant de app.js */}
-                 <h1>Votre gare de départ : {props.departStation}</h1>
+                {/* Récupération du code gare venant de app.js
+                 <h1>Votre gare de départ : {props.departStation}</h1> */}
                  <Tournicoti/>
                 <button className='bouttonGenerateur'>Générer votre destination</button>
             </div>

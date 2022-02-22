@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 function HoraireResult(props) {
   /* Mettre un useState pour fonctionner avec le UseEffet */
   const [horaires, setHoraires] = useState([])
-  const [gareDepart, setGareDepart] = useState("87611004")
+  const [gareDepart, setGareDepart] = useState(props.departStation3)
 
 
   useEffect(() => {
@@ -28,9 +28,6 @@ function HoraireResult(props) {
   }
   return (
     <div className='departures'>
-
-      <h1>Gare de départ : {props.departStation3}</h1>
-
       {/* Props venant le page accueil en passant par pageResult */}
       <span className="titre_depart">{props.liaison_n2}</span>
       {horaires.length > 0 &&
