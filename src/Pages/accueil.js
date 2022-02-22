@@ -3,8 +3,11 @@ import './accueil.css'
 import Logo from '../components/logo'
 import { useState } from 'react';
 
+
 const Accueil = (props) => {
     const [title, setTitle] = useState(" ")
+
+
     return (
 
         <div className="container_accueil">
