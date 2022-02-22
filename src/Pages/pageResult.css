@@ -59,10 +59,11 @@ img {
   flex-basis: auto;
   align-self: auto;
   order: 0;
-  margin: 5px;
+margin-bottom: 20px;
   width: 45%;
   border-radius: 30px;
   background-color: white;
+  box-shadow: 10px 5px 5px grey;
 }
 
 /* Medium devices (tablets, 999px)*/
