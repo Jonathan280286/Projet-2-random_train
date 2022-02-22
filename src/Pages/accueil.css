@@ -1,17 +1,22 @@
+.codeGare{
+    margin-top: 10px;
+    text-align: center;
+}
+
 .container_accueil{
     display: flex;
 }
 .item__accueil__logo{
 display: block;
 text-align: center;
-width: 40%;
+width: 45%;
 /* border: 3px solid red; */
 }
 
 .items_accueil__carte{
-    margin-top: 100px;
+    margin-top: 10px;
     display: block;
-width: 60%;
+width: 55%;
 /* border: 1px solid blue; */
 }
 
@@ -23,11 +28,16 @@ width: 60%;
 }
 
 .accueil__logo{
-    margin: 300px 0 150px 0;
+    margin: 50px 0 150px 0;
 }
 
 img{
 width: 800px;   
+}
+
+.accueil__select{
+margin-left: 20px;
+
 }
 
 label{
@@ -40,10 +50,11 @@ label{
     font-size: 2em;
     background-color: #0088CE;
     color: white;
-    width: 50%;
+    width: 60%;
     height: 60px;
     border-radius: 10px;
-    padding-left: 20px;
+    padding-left: 20px; border-radius: 30px;
+    box-shadow: 10px 5px 5px grey;
 }
 
 @media screen and (max-width: 1100px){ 
@@ -70,17 +81,17 @@ label{
 
 
     #select-city{
-        font-size: 2em;
+        font-size: 1.2em;
         background-color: #0088CE;
         color: white;
-        width: 30%;
+        width: 65%;
         height: 60px;
         border-radius: 10px;
         padding-left: 20px;
     }
 
 label{
-    font-size: 3em;
+    font-size: 2em;
 }   
     .items_accueil__carte{
 width: 100%;

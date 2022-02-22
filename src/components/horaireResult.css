@@ -13,7 +13,8 @@ li{
     box-sizing: content-box;
     padding: 2px;
     display: block;
-    min-width: 0px;
+text-align: center;
+    margin: 5px;
     width: 90%;
     animation-name: mui-auto-fill-cancel;
     border-top: 1px dashed transparent;
