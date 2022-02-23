@@ -1,10 +1,12 @@
 li{
     list-style-type: none;
 }
+
 .horaireResult_depart{
     color: blue;
     border-color: blueviolet 2px solid;
     margin: 5px;
+    font-size: 2em;
 }
 .input{
     font: inherit;
@@ -22,6 +24,7 @@ text-align: center;
     border-right: 1px dashed transparent;
     border-radius: 6px;
     background-color: #f2f2f2;
+    font-size: 2em;
 }
 .titre_depart{
     font-size: 1.2rem;

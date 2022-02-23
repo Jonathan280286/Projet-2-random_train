@@ -1,22 +1,13 @@
-body {
-  margin: 0;
-  font-family: "Avenir", "Roboto", "Helvetica", "Arial", sans-serif;
-  font-weight: normal;
-  font-size: 1rem;
-  color: #333333;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-
-.imageDepart {
+.imageDepart2 {
   background-image: url('../../public/Images/aix_result.jpg');
   background-position: center;
   min-width: 99%;
+  background-color: rgba(255,255,255,3.8);
 }
 
-.imageDepart>div {
+.imageDepart2>div {
   height: 100vh;
-  width: 99%
+  width: 99%;
 }
 
 img {
@@ -24,14 +15,6 @@ img {
   height: auto;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  margin: 5px;
-  padding: 5px;
-}
 
 .flex-items-gauche {
   flex-basis: 68%;
@@ -50,10 +33,27 @@ img {
   flex-wrap: wrap;
   align-items: center;
   margin: 5px;
+  width: 100%;
 }
 
-.flex-items-resultat {
+.flex-items-resultat-gauche {
   display: block;
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+margin-bottom: 20px;
+  width: 45%;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.flex-items-resultat-droite {
+  display: block;
+  width: 50%;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
@@ -68,11 +68,11 @@ margin-bottom: 20px;
 
 /* Medium devices (tablets, 999px)*/
 @media (max-width: 999px) {
-  .flex-items-droite {
+  .flex-items-resultat-droite {
     flex-basis: 100%;
   }
 
-  .flex-items-gauche {
+  .flex-items-resultat-gauche {
     flex-basis: 100%;
   }
 

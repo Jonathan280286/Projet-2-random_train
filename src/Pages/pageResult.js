@@ -8,43 +8,33 @@ import LoisirsResult from '../components/loisirsResult'
 /* mise en place props (liaison) pour app vers pageResult pour ensuite horaireresult */
 const PageResult = (props) => {
     return (
-        <div className='imageDepart'>
-            <div className='flex-container'>
+        <div className='imageDepart2'>
+                 <div className='containerA'> 
+            <Logo />
+         
 
-            <div className="flex-items-droite">
-                    <Logo />
-                </div>
-
-                <div className="flex-items-gauche">
-
-                    <div className='flex-container-resultat' >
-
-                        <div className='flex-items-resultat '  >
-                             <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} /> 
-                        </div>
-
-                        <div className='flex-items-resultat '  >
-                        <MeteoResult /> 
-                        </div>
-                    </div>
-
-                    <div className='flex-container-resultat' >
-
-                        <div className='flex-items-resultat '  >
-                            
-                        </div>
-
-
-                    
-
-                    </div>
-
-                </div>
+         
 
                
 
+                    <div className='flex-container-resultat' >
+
+                        <div className='flex-items-resultat-gauche '  >
+                           <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} />
+                        </div>
+
+                        <div className='flex-items-resultat-droite '  >
+                            <MeteoResult />
+                        </div>
+                    </div>
+
+              
+
+
+</div>
+
             </div>
-        </div>
+   
     );
 };
 
