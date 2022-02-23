@@ -22,7 +22,7 @@ const inputGare = (value) => {
   return (
     <div className="App">
 
-      <Navbar />
+    
       <Routes>
         {/* je joins inputGare de accueil.js et app.js */}
         <Route exact path="/" element={<Accueil inputGare={inputGare}  />} />
@@ -31,7 +31,7 @@ const inputGare = (value) => {
         <Route path="/PageGenerateur" element={<PageGenerateur departStation={departStation} />} />
         <Route path="/PageResult" element={<PageResult liaison="Prochains Trains" departStation2={departStation} />}  />
       </Routes>
-
+  <Navbar />
     </div>
   );
 }
