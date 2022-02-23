@@ -16,10 +16,12 @@ const generateur = () => {
               
             <div className='containerA'> 
                 <Logo/>
-                {/* Récupération du code gare venant de app.js*/}
-                 <h1>Votre gare de départ : {props.departStation}</h1> 
-                 <Tournicoti/>
                 <button className='bouttonGenerateur' onClick={generateur}>Générer votre destination</button>
+   
+                {/* Récupération du code gare venant de app.js
+                 <h1>Votre gare de départ : {props.departStation}</h1>
+                 <Tournicoti/> */}
+                
             </div>
         </div>
         

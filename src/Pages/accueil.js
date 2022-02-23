@@ -16,6 +16,7 @@ const Accueil = (props) => {
 
                 <div className="accueil__logo">
                     <Logo />
+                    Texte de description
                 </div>
 
                 <div className='accueil__select'>

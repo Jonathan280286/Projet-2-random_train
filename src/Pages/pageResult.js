@@ -24,20 +24,18 @@ const PageResult = (props) => {
                         </div>
 
                         <div className='flex-items-resultat '  >
-                          <CityResult />
+                        <MeteoResult /> 
                         </div>
                     </div>
 
                     <div className='flex-container-resultat' >
 
                         <div className='flex-items-resultat '  >
-                             <MeteoResult /> 
+                            
                         </div>
 
 
-                        <div className='flex-items-resultat '  >
-                          <LoisirsResult />
-                        </div>
+                    
 
                     </div>
 
