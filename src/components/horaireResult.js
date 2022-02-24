@@ -32,6 +32,8 @@ filterHoraire(response.data.departures)
   const filterHoraire = (departures) => {
     const filterHoraires = departures.filter((transilien) => transilien.display_informations.code !== "N").filter((filtre, index) => index === 0 || index === 1)
     setgareArrivee(filterHoraires[0])
+  /* Props à changer et en connexion onchangeInput */
+        props.onchangeInput(filterHoraires[0].display_informations.direction)
   }
 
   return (
@@ -55,8 +57,9 @@ filterHoraire(response.data.departures)
 
         
       }
-      {gareArrivee!==""&&<h1>{gareArrivee.display_informations.direction}</h1>}
+     
+     {/*   {gareArrivee!==""&&<h1>{gareArrivee.display_informations.direction}</h1>} */ }
     </div >
   );
-}
+} 
 export default HoraireResult;

@@ -6,8 +6,6 @@ import { useState } from 'react';
 
 const Accueil = (props) => {
     const [title, setTitle] = useState(" ")
-
-
     return (
 
         <div className="container_accueil">

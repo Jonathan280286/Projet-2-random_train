@@ -4,7 +4,7 @@ import axios from 'axios'
 
 
 
-function MeteoResult() {
+function MeteoResult(props) {
   
   const apiKey = '4c70103e03e28b44ae4a384b910da593'
   const [weatherData, setWeatherData] = useState([{}])
@@ -42,7 +42,8 @@ function MeteoResult() {
         className="inputMeteo" 
         placeholder="Entrer la ville........."
         onChange={e => setCity(e.target.value)}
-        value={city}
+ /*Recuperation gare arrivée */
+        value={props.arrivee}
         onKeyPress={getWeather}
       />
    
