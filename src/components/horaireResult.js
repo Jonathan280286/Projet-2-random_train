@@ -32,7 +32,7 @@ filterHoraire(response.data.departures)
   const filterHoraire = (departures) => {
     const filterHoraires = departures.filter((transilien) => transilien.display_informations.code !== "N").filter((filtre, index) => index === 0 || index === 1)
     setgareArrivee(filterHoraires[0])
-  /* Props à changer et en connexion onchangeInput */
+  /* Props à changer et en connexion onchangeInput pour être récupérer dans pageResult ENfant vers Parent*/
         props.onchangeInput(filterHoraires[0].display_informations.direction)
   }
 

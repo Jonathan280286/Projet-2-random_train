@@ -7,10 +7,11 @@ import MeteoResult from '../components/meteoResult'
 import LoisirsResult from '../components/loisirsResult'
 /* mise en place props (liaison) pour app vers pageResult pour ensuite horaireresult */
 const PageResult = (props) => {
-    /*Recuperation gare arrivée */
-    const gareArrivee2 = (gareArrivee) => { 
-     console.log(gareArrivee)   
+    /*Function Recuperation gare arrivée  de enfant à Parent */
+    const gareArrivee2 = (gareArrivee) => {
+        console.log(gareArrivee)
     }
+    /* Function Recuperation gare arrivée */
     return (
         <div className='imageDepart2'>
             <div className='containerA'>
@@ -19,9 +20,9 @@ const PageResult = (props) => {
                 <div className='flex-container-resultat' >
 
                     <div className='flex-items-resultat-gauche '  >
-                        <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} 
-                        onchangeInput={gareArrivee2}
-                        
+                        {/* Recuperation gare arrivée avec le onchangeInput de horaireResult -   de enfant à Parent */}
+                        <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2}
+                            onchangeInput={gareArrivee2}
                         />
                     </div>
                     <div className='flex-items-resultat-droite '  >
