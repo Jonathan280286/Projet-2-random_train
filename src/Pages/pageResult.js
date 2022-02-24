@@ -20,9 +20,9 @@ const PageResult = (props) => {
                     <div className='flex-container-resultat' >
 
                         <div className='flex-items-resultat-gauche '  >
-                           <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} />
+                           <HoraireResult liaison_n2={props.liaison} departStation3={props.departStation2} arriveeStation2={props.arriveeStation} />
                         </div>
-
+                        <h1>{props.arriveeStation2}</h1>
                         <div className='flex-items-resultat-droite '  >
                             <MeteoResult />
                         </div>

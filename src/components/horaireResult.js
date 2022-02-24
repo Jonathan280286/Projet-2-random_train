@@ -7,7 +7,7 @@ function HoraireResult(props) {
   const [horaires, setHoraires] = useState([])
   const [gareDepart, setGareDepart] = useState(props.departStation3)
   const [gareArrivee, setgareArrivee] = useState("")
-
+        
   useEffect(() => {
     /* authentification + headers + dans le lien la variable gare de depart */
     axios.get(`https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:${gareDepart}/departures?datetime=20220131T160312`, {
@@ -17,7 +17,7 @@ function HoraireResult(props) {
       .then((response) => {
         setHoraires(response.data.departures)
 filterHoraire(response.data.departures)
-        console.log(response.data.departures)
+        
 
       })
   }, [])
@@ -52,7 +52,10 @@ filterHoraire(response.data.departures)
             </li>
           
         </ul>
+
+        
       }
+      {gareArrivee!==""&&<h1>{gareArrivee.display_informations.direction}</h1>}
     </div >
   );
 }
