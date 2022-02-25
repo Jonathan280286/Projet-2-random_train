@@ -1,22 +1,25 @@
 import './meteoResult.css'
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
 
-function MeteoResult(props) {
 
+
+function MeteoResult(props) {
+  
   const apiKey = '4c70103e03e28b44ae4a384b910da593'
   const [weatherData, setWeatherData] = useState([{}])
   const [city, setCity] = useState("")
+  
 
   const getWeather = (event) => {
     if (event.key === "Enter") {
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apiKey}`)
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apiKey}`)        
         .then(response => {
           setWeatherData(response.data)
           console.log(response.data)
 
         }
-        )
+      )
     }
   }
 
@@ -31,41 +34,40 @@ function MeteoResult(props) {
 
     return `${day} ${date} ${month} ${year}`
   }
-
+  
   return (
     <div className="container">
-      <input
-        className="inputMeteo"
+        
+      <input        
+        className="inputMeteo" 
         placeholder="Entrer la ville........."
         onChange={e => setCity(e.target.value)}
-        /*Recuperation gare arrivée */
+ /*Recuperation gare arrivée */
         value={props.arrivee}
         onKeyPress={getWeather}
       />
-
-      {(typeof weatherData.main === 'undefined') ? (
-        <div>
-          <div className="date">{dateBuilder(new Date())}</div>
-          <p>{weatherData.name}</p>
-        </div>
-      ) : (
-        <div className='resultatsOK'>
-          <div className="date">{dateBuilder(new Date())}</div>
-          <div className='temp'>
+   
+    {(typeof weatherData.main === 'undefined') ? (
+      <div>       
+        <div className="date">{dateBuilder(new Date())}</div>
+        <p>{weatherData.name}</p>
+      </div>
+    ) : (
+      <div className='resultatsOK'>
+        <div className="date">{dateBuilder(new Date())}</div>
+            <div className='temp'>
             <p>{weatherData.name}</p>
             <p>{Math.round(weatherData.main.temp)}°C</p>
-          </div>
-          <p className='weather'>{weatherData.weather[0].main}</p>
-        </div>
-      )
+            </div>
+        <p className='weather'>{weatherData.weather[0].main}</p>
+      </div>
+    )
+    }
 
-      }
-
-
+        
 
     </div>
   )
 }
-
 
 export default MeteoResult;
