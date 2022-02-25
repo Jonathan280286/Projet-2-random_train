@@ -14,17 +14,17 @@ const Accueil = (props) => {
 
                 <div className="accueil__logo">
                     <Logo />
-                   <h3> C'est le week-end et vous ne savez pas où partir ?<br />
-                    Choississez votre gare de départ.<br />
-                    Nous vous proposons votre destination la plus rapide en train.<br />
-                   Nous vous donnons la météo pour vous mieux vous préparer.
-                </h3></div>
+                    <h3> C'est le week-end et vous ne savez pas où partir ?<br />
+                        Choississez votre gare de départ.<br />
+                        Nous vous proposons votre destination la plus rapide en train.<br />
+                        Nous vous donnons la météo pour vous mieux vous préparer.
+                    </h3></div>
 
                 <div className='accueil__select'>
                     <label for="select-city">Choisissez votre gare de départ :</label><br></br>
 
                     <select
-                    /* je joins inputGare de accueil.js et app.js */
+                        /* je joins inputGare de accueil.js et app.js */
                         onChange={event => props.inputGare(event.target.value)}
                         name="city"
                         id="select-city">
