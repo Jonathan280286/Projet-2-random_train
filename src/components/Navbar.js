@@ -4,19 +4,9 @@ const Navbar = () => {
   return(
 
   <div>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Accueil</Link>
-        </li>
-        <li>
-          <Link to="PageGenerateur">Page Générateur</Link>
-        </li>
-        <li>
-          <Link to="/PageResult">Page Résultat</Link>
-        </li>
-      </ul>
-    </nav>
+
+          <Link to="/">Accueil</Link> -  <Link to="PageGenerateur">Page Générateur</Link> -  <Link to="/PageResult">Page Résultat</Link>
+ 
   </div>  );
 }
 
