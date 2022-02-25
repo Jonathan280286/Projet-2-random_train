@@ -5,13 +5,19 @@ import HoraireResult from '../components/horaireResult'
 import CityResult from '../components/cityResult'
 import MeteoResult from '../components/meteoResult'
 import LoisirsResult from '../components/loisirsResult'
+import { useState } from 'react';
 /* mise en place props (liaison) pour app vers pageResult pour ensuite horaireresult */
 const PageResult = (props) => {
+    const [station, setstation] = useState(props.departStation2)
+    const [arrivee1,setarrivee1] = useState("")
     /*Function Recuperation gare arrivée  de enfant à Parent */
-    const gareArrivee2 = (gareArrivee) => {
-        console.log(gareArrivee)
-    }
-    /* Function Recuperation gare arrivée */
+    const gareArrivee2 = (gareArrivee) => 
+     {setarrivee1(gareArrivee)}
+    
+
+    console.log(gareArrivee2)
+    /*Function Recuperation gare arrivée  de enfant à Parent */
+
     return (
         <div className='imageDepart2'>
             <div className='containerA'>
@@ -26,7 +32,7 @@ const PageResult = (props) => {
                         />
                     </div>
                     <div className='flex-items-resultat-droite '  >
-                        <MeteoResult arrivee={gareArrivee2} />
+                        <MeteoResult arrivee={arrivee1} />
                     </div>
                 </div>
 
@@ -34,7 +40,7 @@ const PageResult = (props) => {
 
 
             </div>
-
+            <h1>{gareArrivee2}</h1>
         </div>
     );
 };
