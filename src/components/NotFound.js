@@ -6,9 +6,9 @@ import './NotFound.css';
 const NotFound = () => {
     return (
 <div>
-    
+     <Logo />
     <img  className='image404' src='./Images/page404.jpeg' alt='image Page 404' /> 
-    <Logo />
+   
   </div>
     );
 };
