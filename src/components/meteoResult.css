@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 350px;
+  height: 100%;
   border-radius: 25px;
 }
 
@@ -18,6 +18,10 @@
   margin : 10px;
   width: 50%;
   align-items: center;
+}
+
+.info{
+  margin: 10px;
 }
 
 .resultatsOK {
@@ -48,6 +52,7 @@
 .weather {
   font-size: 28px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .firefox {

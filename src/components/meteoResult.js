@@ -1,17 +1,22 @@
 import './meteoResult.css'
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import axios from 'axios'
+
+
+
+function MeteoResult(props) {
   
-  function MeteoResult(props) { 
-    const apiKey = '4c70103e03e28b44ae4a384b910da593'
-    const [weatherData, setWeatherData] = useState([{}])
-    const [city, setCity] = useState("")
+  const apiKey = '4c70103e03e28b44ae4a384b910da593'
+  const [weatherData, setWeatherData] = useState([{}])
+  const [city, setCity] = useState("")
+  
 
   const getWeather = (event) => {
     if (event.key === "Enter") {
-      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${props.arrivee}&units=metric&APPID=${apiKey}`)        
+      axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=${apiKey}`)        
         .then(response => {
           setWeatherData(response.data)
+          console.log(response.data)
 
         }
       )
@@ -35,12 +40,16 @@ import axios from 'axios'
         
       <input        
         className="inputMeteo" 
-        /*placeholder="Entrer la ville........."*/
-        onChange={e => setCity(e.target.value)}
- /*Recuperation gare arrivée */
-        value={props.arrivee}
-        onKeyPress={getWeather}
+        placeholder="Entrer la ville........."
+        onChange={(e) => { setCity(e.target.value)}}
+        
+        defaultValue={props.arrivee} /*Recuperation gare arrivée */
+        /*defaultValue permet de laisser la possibilité de modifier le champs de recherche déjà rempli*/
+
+        onKeyPress={getWeather} 
+        
       />
+      <p className='info'>⛈ Valider la localisation et ENTRER ☀️</p>
    
     {(typeof weatherData.main === 'undefined') ? (
       <div>       
