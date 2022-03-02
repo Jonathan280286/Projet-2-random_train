@@ -18,7 +18,7 @@ const generateur = () => {
                 <Logo/>
                 <h2>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h2>
                 <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
-                <button className='bouttonGenerateur' onClick={generateur}>Générer votre destination</button>
+                <button className='button' onClick={generateur}>Générer votre destination</button>
    
                 {/* Récupération du code gare venant de app.js
                  <h1>Votre gare de départ : {props.departStation}</h1>
