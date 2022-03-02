@@ -18,6 +18,7 @@ function HoraireResult(props) {
       .then((response) => {
         setHoraires(response.data.departures)
         filterHoraire(response.data.departures)
+        console.log(response.data.departures)
 
 
       })
@@ -34,7 +35,7 @@ function HoraireResult(props) {
     const filterHoraires = departures.filter((transilien) => transilien.display_informations.code !== "N" && transilien.display_informations.network !== "RER" ).filter((filtre, index) => index === 0 || index === 1)
     setgareArrivee(filterHoraires[0])
     /* Props à changer et en connexion onchangeInput pour être récupérer dans pageResult ENfant vers Parent*/
-    props.onchangeInput(filterHoraires[0].display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2",""))
+    props.onchangeInput(filterHoraires[0].display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2","").replace("Montparnasse Hall 1 & 2",""))
   }
 
   return (
@@ -49,7 +50,7 @@ function HoraireResult(props) {
           <li>
             <div className="horaireResult_depart">{gareArrivee.stop_point.name}</div>
               <div className='input_depart'>
-                <div className='input'>Gare d'arrivée : {gareArrivee.display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2","")}</div>           
+                <div className='input'>Gare d'arrivée : {gareArrivee.display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ")}</div>           
                 <div className='input2'>Heure de départ &nbsp;  &nbsp;  <span className="horaire">{transformHoraire(gareArrivee.stop_date_time.departure_date_time)}</span> </div>
                 <div className='input'><marquee behavior="scroll" scrollamount="10">Numéro du train          {gareArrivee.display_informations.trip_short_name} - Train :&nbsp;<span className="horaire">{gareArrivee.display_informations.network}</span></marquee></div>
                 <img className='logoSncf' src={'./images/sncf.jpg'} alt="icone SNCF" />
