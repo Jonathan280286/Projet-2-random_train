@@ -10,7 +10,7 @@ const Accueil = (props) => {
     return (
 
         <div className="container_accueil">
-            <City />
+          
 
             <div className="item__accueil__logo">
 
