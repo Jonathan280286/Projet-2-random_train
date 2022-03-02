@@ -1,6 +1,7 @@
 import './horaireResult.css'
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+
 /* mise en place props en liaison avec App.js */
 function HoraireResult(props) {
   /* Mettre un useState pour fonctionner avec le UseEffet */
@@ -25,7 +26,7 @@ function HoraireResult(props) {
 
   /* Fonction pour trier l'horaire de départ */
   const transformHoraire = (heure) => {
-    return heure.slice(9, -2).replace(/\B(?=(\d{2})+(?!\d))/g, "h").concat('min');
+    return heure.slice(9, -2).replace(/\B(?=(\d{2})+(?!\d))/g, ":").concat('');
   }
 
   /* Fonction pour recuperer la gare d'arrivée */
@@ -47,9 +48,12 @@ function HoraireResult(props) {
           {/* créer un li Key puis un map pour lister les donner et sensuite les filtrer */}
           <li>
             <div className="horaireResult_depart">{gareArrivee.stop_point.name}</div>
-            <div className='input'>Gare d'arrivée : {gareArrivee.display_informations.direction.replace(/\(.[^(]*\)/g, '').replace("-"," ").replace("Gare de Lyon Hall 1 &2","")}</div>           
-            <div className='input'>Heure de départ : {transformHoraire(gareArrivee.stop_date_time.departure_date_time)}</div>
-            <div className='input'><marquee behavior="scroll" scrollamount="10">Numéro du train : {gareArrivee.display_informations.trip_short_name} - Train : {gareArrivee.display_informations.network}</marquee></div>
+              <div className='input_depart'>
+                <div className='input'>Gare d'arrivée : {gareArrivee.display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2","")}</div>           
+                <div className='input2'>Heure de départ &nbsp;  &nbsp;  <span className="horaire">{transformHoraire(gareArrivee.stop_date_time.departure_date_time)}</span> </div>
+                <div className='input'><marquee behavior="scroll" scrollamount="10">Numéro du train          {gareArrivee.display_informations.trip_short_name} - Train :&nbsp;<span className="horaire">{gareArrivee.display_informations.network}</span></marquee></div>
+                <img className='logoSncf' src={'./images/sncf.jpg'} alt="icone SNCF" />
+              </div>
           </li>
 
         </ul>

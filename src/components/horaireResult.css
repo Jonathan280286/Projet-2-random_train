@@ -3,13 +3,18 @@ li{
 }
 
 .horaireResult_depart{
+    font: inherit;
     color: blue;
     border-color: blueviolet 2px solid;
-    margin: 5px;
-    font-size: 2em;
+    margin: 40px 0 0 0;
+    font-size: 2.5em;
+}
+.logoSncf{
+    margin-top: 20px;
+    width: 10%;
 }
 .input{
-    color: yellow;
+    color: white;
     font: inherit;
     letter-spacing: inherit;
     box-sizing: content-box;
@@ -24,7 +29,40 @@ text-align: center;
     border-left: 1px dashed transparent;
     border-right: 1px dashed transparent;
     border-radius: 6px;
-    background-color: blue;
+    background-color: #113e7d;
+    font-size: 2em;
+}
+.horaire{
+    color: yellow;
+    font: inherit;
+    font-size: 2,5em;
+    font-weight: bold;
+}
+.inpunt_depart{
+    font-weight: bold;
+}
+.titre_depart{
+    color: black;
+    font: inherit;
+    font-size: 1,5em;
+}
+.input2{
+    color: white;
+    font: inherit;
+    letter-spacing: inherit;
+    box-sizing: content-box;
+    padding: 2px;
+    margin-bottom: 5px;
+    display: block;
+text-align: center;
+    margin: 5px;
+    width: 98%;
+    animation-name: mui-auto-fill-cancel;
+    border-top: 1px dashed transparent;
+    border-left: 1px dashed transparent;
+    border-right: 1px dashed transparent;
+    border-radius: 6px;
+    background-color: #356db8;
     font-size: 2em;
 }
 .titre_depart{
@@ -36,3 +74,8 @@ text-align: center;
     padding: 5px;
     margin: 8px;
 }
+
+@media (max-width: 999px) {
+    .horaireResult_depart{
+        font-size: 1.5em;
+    }}
