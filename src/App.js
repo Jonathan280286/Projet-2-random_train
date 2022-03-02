@@ -29,7 +29,7 @@ function App() {
         {/*Page 404 avec */}
         <Route path="*" element={<NotFound />} />
         <Route path="/PageGenerateur" element={<PageGenerateur departStation={departStation} />} />
-        <Route path="/PageResult" element={<PageResult liaison="Prochain Train à venir" departStation2={departStation} />} />
+        <Route path="/PageResult" element={<PageResult liaison="Prochain Train à venir en temps réel" departStation2={departStation} />} />
       </Routes>
       <Navbar />
     </div>
