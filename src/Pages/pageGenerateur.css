@@ -40,5 +40,14 @@
     font-size: initial
   }
 
+  img{
+    position: relative;
+   text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
+  }
+
 
 

@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import NotFound from './components/NotFound';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import City from './components/city';
 
 function App() {
   /* je joins inputGare - departStation de accueil.js et app.js */
@@ -24,6 +25,7 @@ function App() {
 
 
       <Routes>
+     
         {/* je joins inputGare de accueil.js et app.js */}
         <Route exact path="/" element={<Accueil inputGare={inputGare} />} />
         {/*Page 404 avec */}
