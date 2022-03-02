@@ -31,7 +31,7 @@ const Accueil = (props) => {
                         <option value="City">Ville</option>
                         <option value="87391003">Gare de Montparnasse</option>
                         <option value="87686006">Paris gare de Lyon</option>
-                        <option value="87223263">Gare de Lille Europe</option>
+                        <option value="87286005">Gare de Lille Flandres</option>
                         <option value="87481002">Gare de Nantes</option>
                         <option value="87751008">Gare de Marseille</option>
                         <option value="87611004">Gare de Toulouse</option>
