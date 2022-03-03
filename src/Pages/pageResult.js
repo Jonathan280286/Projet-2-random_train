@@ -20,7 +20,7 @@ const PageResult = (props) => {
     console.log(gareArrivee2)
     /*Function Recuperation gare arrivée  de enfant à Parent */
     return (
-        <div className='imageDepart2'>
+        <div>
             <div className='containerA'>
                 <Logo />
                 <div className='flex-container-resultat' >
@@ -37,6 +37,7 @@ const PageResult = (props) => {
             </div>
             <h1>{gareArrivee2}</h1>
         </div>
+     
     );
 };
 export default PageResult;

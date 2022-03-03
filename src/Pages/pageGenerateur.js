@@ -42,7 +42,7 @@ const PageGenerateur = (props) => {
         navigate("/pageResult")
     }
     return (
-        <div className='imageDepart'>
+        <div>
                 
             <div className='containerA'>
                 <Logo />
