@@ -4,6 +4,8 @@ import '../components/tournicoti.css'
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './pageGenerateur.css'
+import useSound from 'use-sound';
+import dingding from '../components/sounds/dingding2.mp3'
 
 const imageDepart = {
     87391003: "/Images/Montparnasse.jpeg",
@@ -38,9 +40,14 @@ const PageGenerateur = (props) => {
 
     const navigate = useNavigate()
 
+    const [play] = useSound(dingding);
+
     const generateur = () => {
+        play()
         navigate("/pageResult")
     }
+
+   
     return (
         <div>
                 
