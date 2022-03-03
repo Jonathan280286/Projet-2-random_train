@@ -54,10 +54,10 @@ const PageGenerateur = (props) => {
 
 
                 {/* <h1>Votre gare de départ : {props.departStation}</h1> */}
-            {/* Récupération du code gare venant de app.js
+            {/* Récupération du code gare venant de app.js*/}
                  
                 
-}
+
 
         </div>
 
