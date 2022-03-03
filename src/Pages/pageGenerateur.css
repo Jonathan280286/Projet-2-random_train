@@ -1,7 +1,7 @@
 
   .button {
-      margin-top: 3em;
-    backface-visibility: hidden;
+  margin-top: 1em;
+  backface-visibility: hidden;
   position: relative;
   cursor: pointer;
   display: inline-block;
@@ -12,7 +12,7 @@
   border-width: 1px 1px 1px 1px;
   padding: 5px 20px 7px 20px;
   box-shadow: 0px 2px 2px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,0.25),0px 0px 2px 4px rgba(0,0,0,0.1);
-    color: grey;
+  color: grey;
   font-size: 45px;
   font-weight: 900;
   font-style: normal;
@@ -38,6 +38,15 @@
   }
   .button > .ld {
     font-size: initial
+  }
+
+  img{
+    position: relative;
+   text-align: center;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.8;
   }
 
 

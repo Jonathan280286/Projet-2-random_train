@@ -35,7 +35,7 @@ function HoraireResult(props) {
     const filterHoraires = departures.filter((transilien) => transilien.display_informations.code !== "N" && transilien.display_informations.network !== "RER" ).filter((filtre, index) => index === 0 || index === 1)
     setgareArrivee(filterHoraires[0])
     /* Props à changer et en connexion onchangeInput pour être récupérer dans pageResult ENfant vers Parent*/
-    props.onchangeInput(filterHoraires[0].display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2","").replace("Montparnasse Hall 1 & 2",""))
+    props.onchangeInput(filterHoraires[0].display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ").replace("Gare de Lyon Hall 1 &2","").replace("Montparnasse Hall 1 & 2","")).slice(1,-1)
   }
 
   return (

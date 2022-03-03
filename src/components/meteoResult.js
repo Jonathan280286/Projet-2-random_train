@@ -63,7 +63,7 @@ function MeteoResult(props) {
             <p>{weatherData.name}</p>
             <p>{Math.round(weatherData.main.temp)}°C</p>
             </div>
-        <p className='weather'>{weatherData.weather[0].main.replace("Clear","☀️ Soleil ☀️").replace("Clouds","☁️ Nuageux ☁️").replace("Sunny","Soleil").replace("Rain","Pluie 🌧").replace("Snow","☃️ Neige ❄️")}</p>
+        <p className='weather'>{weatherData.weather[0].main.replace("Clear","☀️ Soleil ☀️").replace("Clouds","☁️ Nuageux ☁️").replace("Sunny","Soleil").replace("Rain","Pluie 🌧").replace("Snow","☃️ Neige ❄️").replace("Drizzle","🌨 Bruine 🌨")}</p>
       </div>
     )
     }
