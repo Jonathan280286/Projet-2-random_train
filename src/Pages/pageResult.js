@@ -6,6 +6,10 @@ import CityResult from '../components/cityResult'
 import MeteoResult from '../components/meteoResult'
 import LoisirsResult from '../components/loisirsResult'
 import { useState } from 'react';
+
+
+
+
 /* mise en place props (liaison) pour app vers pageResult pour ensuite horaireresult */
 const PageResult = (props) => {
     const [station, setstation] = useState(props.departStation2)
