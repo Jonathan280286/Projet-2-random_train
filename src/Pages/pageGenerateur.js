@@ -18,7 +18,7 @@ const imageDepart = {
 
   const villes = {
     87391003: "Montparnasse",
-    87286005: "lille-flandre",
+    87286005: "Lille-Flandres",
     87688887: "Montpellier",
     87686006: "Paris gare de Lyon",
     87481002: "Nantes",

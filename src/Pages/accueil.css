@@ -28,7 +28,7 @@ width: 55%;
 }
 
 .accueil__logo{
-    margin: 50px 0 150px 0;
+    margin: 30px 0 150px 0;
 }
 
 img{
@@ -46,6 +46,7 @@ label{
 }
 
 .texte{
+    font-size: 2em;
     margin-top: 30px;
     color:#0088CE;
 }
@@ -81,7 +82,7 @@ label{
         margin: auto ;
     }
     .accueil__logo{
-        margin: 50px 0 25px 0;
+        margin: 20px 0 50px 0;
     }
 
 

@@ -16,11 +16,12 @@ const Accueil = (props) => {
 
                 <div className="accueil__logo">
                     <Logo />
-                    <h3 className='texte'> C'est le week-end et vous ne savez pas où partir ?<br />
+                    <div className='texte'> C'est le week-end et vous ne savez pas où partir ?<br />
                         Choisissez votre gare de départ.<br />
                         Nous vous proposons votre destination la plus rapide en train.<br />
                         Et la météo pour vous mieux vous préparer !
-                    </h3></div>
+                    </div>
+                </div>
 
                 <div className='accueil__select'>
                     <label for="select-city">Choisissez votre gare de départ :</label><br></br>
