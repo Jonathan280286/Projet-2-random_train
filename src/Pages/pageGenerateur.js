@@ -5,7 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './pageGenerateur.css'
 
-const myObj = {
+const imageDepart = {
     87391003: "/Images/Montparnasse.jpeg",
     87286005: "/Images/lille_flandre.jpg",
     87688887: "/Images/Montpellier.jpg",
@@ -30,7 +30,7 @@ const myObj = {
 const PageGenerateur = (props) => {
 
     function imageCity(){
-        return myObj[props.departStation]
+        return imageDepart[props.departStation]
     }
     function city(){
         return villes[props.departStation]
