@@ -1,11 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css'
+
+
 const Navbar = () => {
   return(
 
-  <div>
+  <div className='footer'>
+    
 
-          <Link to="/">Accueil</Link> -  <Link to="PageGenerateur">Page Générateur</Link> -  <Link to="/PageResult">Page Résultat</Link>
+          <Link className='footer_color' to="/">Accueil</Link>   <Link className='footer_color' to="PageGenerateur">Page Générateur</Link>   <Link className='footer_color' to="/PageResult">Page Résultat</Link>
  
   </div>  );
 }

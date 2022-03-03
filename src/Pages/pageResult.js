@@ -6,6 +6,10 @@ import CityResult from '../components/cityResult'
 import MeteoResult from '../components/meteoResult'
 import LoisirsResult from '../components/loisirsResult'
 import { useState } from 'react';
+
+
+
+
 /* mise en place props (liaison) pour app vers pageResult pour ensuite horaireresult */
 const PageResult = (props) => {
     const [station, setstation] = useState(props.departStation2)
@@ -16,7 +20,7 @@ const PageResult = (props) => {
     console.log(gareArrivee2)
     /*Function Recuperation gare arrivée  de enfant à Parent */
     return (
-        <div className='imageDepart2'>
+        <div>
             <div className='containerA'>
                 <Logo />
                 <div className='flex-container-resultat' >
@@ -33,6 +37,7 @@ const PageResult = (props) => {
             </div>
             <h1>{gareArrivee2}</h1>
         </div>
+     
     );
 };
 export default PageResult;

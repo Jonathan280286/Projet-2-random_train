@@ -19,8 +19,6 @@ function HoraireResult(props) {
         setHoraires(response.data.departures)
         filterHoraire(response.data.departures)
         console.log(response.data.departures)
-
-
       })
   }, [])
 
