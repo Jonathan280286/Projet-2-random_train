@@ -2,7 +2,7 @@ import React from 'react';
 import './accueil.css'
 import Logo from '../components/logo'
 import { useState } from 'react';
-import City from '../components/city';
+
 
 
 const Accueil = (props) => {
@@ -41,7 +41,9 @@ const Accueil = (props) => {
                         <option value="87688887">Gare de Montpellier</option>
                         <option value="87723197">Lyon Part-Dieu</option>
                     </select>
-
+                    <div className='container_logo'>
+                    <img className='logoSncf' src={'./images/sncf.jpg'} alt="icone SNCF" />
+                    </div>
                 </div>
                 <form>
 
@@ -52,7 +54,7 @@ const Accueil = (props) => {
             <div className="items_accueil__carte">
                 <img className="image-carte" src='./Images/carteFrance.png' alt='image logo' />
             </div>
-
+           
         </div>
     );
 };

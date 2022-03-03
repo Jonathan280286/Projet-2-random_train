@@ -46,12 +46,14 @@ const PageGenerateur = (props) => {
                 
             <div className='containerA'>
                 <Logo />
-                <h2>{city()}</h2>
-                <img src={imageCity()} alt={props.departStation} />
-                <h2>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h2>
-                <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
+                <div className='container_generateur'>
+                    <h2 className='gare_depart'>Votre gare de départ : {city()}</h2>
+                    <img src={imageCity()} alt={props.departStation} />
+                    <h2>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h2>
+                    <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
+                </div>
                 <button className='button' onClick={generateur}>Générer votre destination</button></div>
-
+              
 
                 {/* <h1>Votre gare de départ : {props.departStation}</h1> */}
             {/* Récupération du code gare venant de app.js*/}

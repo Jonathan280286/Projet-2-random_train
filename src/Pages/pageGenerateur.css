@@ -46,6 +46,17 @@
       margin-left: auto;
       margin-right: auto;
       opacity: 0.8;
+      
+    }
+
+    .gare_depart{
+      text-align: left;
+    }
+
+    .container_generateur{
+      width: 80%;
+      border-radius: 4%;
+     
     }
   
   
