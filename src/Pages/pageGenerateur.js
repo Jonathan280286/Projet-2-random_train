@@ -43,8 +43,13 @@ const PageGenerateur = (props) => {
     const [play] = useSound(dingding);
 
     const generateur = () => {
-        play()
-        navigate("/pageResult")
+        const a=document.getElementById('imageVille');a.style.display='none'
+        const b=document.getElementById('circle');b.style.display='block'
+        
+        setTimeout(()=>{
+        play() 
+        navigate("/pageResult") 
+        },3000)
     }
 
    
@@ -54,7 +59,8 @@ const PageGenerateur = (props) => {
             <div className='containerA'>
                 <Logo />
                 <h2>{city()}</h2>
-                <img src={imageCity()} alt={props.departStation} />
+                <img id='imageVille' src={imageCity()} alt={props.departStation} />
+                <img id='circle' src='./Images/circle.gif'></img>
                 <h2>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h2>
                 <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
                 <button className='button' onClick={generateur}>Générer votre destination</button></div>
