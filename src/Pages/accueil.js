@@ -2,6 +2,7 @@ import React from 'react';
 import './accueil.css'
 import Logo from '../components/logo'
 import { useState } from 'react';
+import City from '../components/city';
 
 
 const Accueil = (props) => {
@@ -9,6 +10,7 @@ const Accueil = (props) => {
     return (
 
         <div className="container_accueil">
+          
 
             <div className="item__accueil__logo">
 
