@@ -36,14 +36,16 @@
       font-size: initial
     }
   
-    img{
+    #imageVille{
       position: relative;
      text-align: center;
       max-width: 100%;
       margin-left: auto;
       margin-right: auto;
       opacity: 0.8;
-      
+    }
+    #circle{
+      display:none
     }
 
     .gare_depart{
@@ -55,9 +57,12 @@
 
     .container_generateur{
       margin-left: auto;
-      margin-right: auto;
-      display: fle;
+      margin-right: auto;      
+      /* border : 1px solid green;       */
       width: 60%;
+
+      
+       
      
       background-color: white;
       padding: 10px;
