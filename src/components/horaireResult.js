@@ -25,7 +25,7 @@ function HoraireResult(props) {
 
   /* Fonction pour trier l'horaire de départ */
   const transformHoraire = (heure) => {
-    return heure.slice(9, -2).replace(/\B(?=(\d{2})+(?!\d))/g, ":").concat('');
+    return heure.slice(9, -2).replace(/\B(?=(\d{2})+(?!\d))/g, ":");
   }
 
   /* Fonction pour recuperer la gare d'arrivée */

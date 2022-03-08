@@ -16,15 +16,14 @@ const Accueil = (props) => {
 
                 <div className="accueil__logo">
                     <Logo />
-                    <div className='texte'> C'est le week-end et vous ne savez pas où partir ?<br />
-                        Choisissez votre gare de départ.<br />
+                    <div className='texte'><strong>C'est le week-end et vous ne savez pas où partir ?</strong><br />
                         Nous vous proposons votre destination la plus rapide en train.<br />
                         Et la météo pour vous mieux vous préparer !
                     </div>
                 </div>
 
                 <div className='accueil__select'>
-                    <label for="select-city">Choisissez votre gare de départ :</label><br></br>
+                    <label htmlFor="select-city">Choisissez votre gare de départ :</label>
 
                     <select
                         /* je joins inputGare de accueil.js et app.js */

@@ -6,6 +6,7 @@ import CityResult from '../components/cityResult'
 import MeteoResult from '../components/meteoResult'
 import LoisirsResult from '../components/loisirsResult'
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -19,6 +20,10 @@ const PageResult = (props) => {
     const gareArrivee2 = (gareArrivee) => { setarrivee1(gareArrivee) }
     console.log(gareArrivee2)
     /*Function Recuperation gare arrivée  de enfant à Parent */
+    const retourAccueil = ()=>{
+        navigate("/") 
+    }
+    const navigate = useNavigate()
     return (
         <div>
             <div className='containerA'>
@@ -36,6 +41,7 @@ const PageResult = (props) => {
                 </div>
             </div>
             <h1>{gareArrivee2}</h1>
+            <button className='button' onClick={retourAccueil}>Changer votre voyage</button>
         </div>
      
     );

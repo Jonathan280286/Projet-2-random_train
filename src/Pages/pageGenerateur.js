@@ -42,13 +42,15 @@ const PageGenerateur = (props) => {
 
     const [play] = useSound(dingding);
 
-    const generateur = () => {
-        const a=document.getElementById('imageVille');a.style.display='none'
-        const b=document.getElementById('circle');b.style.display='flex'        
+    const retourAccueil = ()=>{
+        navigate("/") 
+    }
+
+   const generateur = () => {      
         setTimeout(()=>{
         play() 
         navigate("/pageResult") 
-        },1500)
+        },1000)
     }
 
    
@@ -63,6 +65,7 @@ const PageGenerateur = (props) => {
                     <img id='circle' src='./images/circle.gif' alt='' />  
                     <h3>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h3>
                     <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
+                    <button className='button' onClick={retourAccueil}>Changer votre gare de départ</button>
                     <button className='button' onClick={generateur}>Générer votre destination</button></div>
                 </div>
                 

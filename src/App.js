@@ -33,7 +33,7 @@ function App() {
         <Route path="/PageGenerateur" element={<PageGenerateur departStation={departStation} />} />
         <Route path="/PageResult" element={<PageResult liaison="Prochain Train à venir en temps réel" departStation2={departStation} />} />
       </Routes>
-      <Navbar />
+      {/*<Navbar />*/}
     </div>
   );
 }
