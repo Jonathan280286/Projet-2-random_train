@@ -63,10 +63,10 @@ const PageGenerateur = (props) => {
                     <h2 className='gare_depart'>Votre gare de départ : {city()}</h2>
                     <img id='imageVille' src={imageCity()} alt={props.departStation} />
                     <img id='circle' src='./images/circle.gif' alt='' />  
-                    <h3>Nous allons vous proposer la meilleure destination de manière aléatoire et optimisée</h3>
-                    <h3>Pour cela il suffit de cliquer sur le bouton et notre proposition de voyage vous sera proposée.</h3>
-                    <button className='button' onClick={retourAccueil}>Changer votre gare de départ</button>
-                    <button className='button' onClick={generateur}>Générer votre destination</button></div>
+                    <h2 className='gare_depart' >Nous allons vous proposer <br />la meilleure destination de manière aléatoire</h2>
+                    <button className='button_generateur' onClick={generateur}>Générer votre destination</button>
+                    <button className='button_accueil' onClick={retourAccueil}>Changer votre gare de départ</button>
+                    </div>
                 </div>
                 
               

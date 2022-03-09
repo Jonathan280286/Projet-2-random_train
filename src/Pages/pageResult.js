@@ -2,9 +2,7 @@ import React from 'react';
 import Logo from '../components/logo';
 import './pageResult.css'
 import HoraireResult from '../components/horaireResult'
-import CityResult from '../components/cityResult'
 import MeteoResult from '../components/meteoResult'
-import LoisirsResult from '../components/loisirsResult'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -41,7 +39,7 @@ const PageResult = (props) => {
                 </div>
             </div>
             <h1>{gareArrivee2}</h1>
-            <button className='button' onClick={retourAccueil}>Changer votre voyage</button>
+            <button className='button_retour' onClick={retourAccueil}>Changer votre voyage</button>
         </div>
      
     );

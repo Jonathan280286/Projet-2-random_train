@@ -23,7 +23,7 @@ const Accueil = (props) => {
                 </div>
 
                 <div className='accueil__select'>
-                    <label htmlFor="select-city">Choisissez votre gare de départ :</label>
+                    <label htmlFor="select-city" className='choississez'>Choisissez votre gare de départ :</label>
 
                     <select
                         /* je joins inputGare de accueil.js et app.js */
