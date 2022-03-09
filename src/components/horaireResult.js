@@ -49,7 +49,7 @@ function HoraireResult(props) {
             <div className="horaireResult_depart">{gareArrivee.stop_point.name}</div>
               <div className='input_depart'>
                 <div className='input'>Gare d'arrivée : {gareArrivee.display_informations.direction.replace(/\(.[^(]*\)/g, '').slice(0,-1).replace("-"," ")}</div>           
-                <div className='input2'>Heure de départ &nbsp;  &nbsp;  <span className="horaire">{transformHoraire(gareArrivee.stop_date_time.departure_date_time)}</span> </div>
+                <div className='input2'>Heure de départ : <span className="horaire">{transformHoraire(gareArrivee.stop_date_time.departure_date_time)}</span> </div>
                 <div className='input'><marquee behavior="scroll" scrollamount="10">Numéro du train          {gareArrivee.display_informations.trip_short_name} - Train :&nbsp;<span className="horaire">{gareArrivee.display_informations.network}</span></marquee></div>
                 <img className='logoSncf' src={'./images/sncf.jpg'} alt="icone SNCF" />
               </div>
