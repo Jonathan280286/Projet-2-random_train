@@ -49,8 +49,8 @@ function MeteoResult(props) {
         onKeyPress={getWeather} 
         
       />
-      <p className='info'>⛈ Valider la localisation et ENTRER ☀️</p>
-   
+      {/* <p className='info'>⛈ Valider la localisation et ENTRER ☀️</p>
+    */}
     {(typeof weatherData.main === 'undefined') ? (
       <div>       
         <div className="date">{dateBuilder(new Date())}</div>
@@ -62,7 +62,11 @@ function MeteoResult(props) {
             <div className='temp'>
             <p>{weatherData.name}</p>
             <p>{Math.round(weatherData.main.temp)}°C</p>
+            <p className='maxmin'>Mini {Math.round(weatherData.main.temp_min)}°C - Maxi {Math.round(weatherData.main.temp_max)}°C</p>
+            
             </div>
+            <p className='humidity'>Humidité : {weatherData.main.humidity}%</p>
+            <p className='pressure'>{weatherData.main.pressure} Hpa</p>
         <p className='weather'>{weatherData.weather[0].main.replace("Clear","☀️ Soleil ☀️").replace("Clouds","☁️ Nuageux ☁️").replace("Sunny","Soleil").replace("Rain","Pluie 🌧").replace("Snow","☃️ Neige ❄️").replace("Drizzle","🌨 Bruine 🌨")}</p>
       </div>
     )

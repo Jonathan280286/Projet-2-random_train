@@ -1,5 +1,5 @@
 .button_accueil {
-  width: 60%;
+  
     margin: 1em;
     backface-visibility: hidden;
     position: relative;
@@ -37,7 +37,7 @@
     }
 
     .button_generateur {
-      width: 60%;
+      
         margin: 1em;
         backface-visibility: hidden;
         position: relative;
@@ -115,6 +115,18 @@
     .button {
       width: 90%;
       font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .button_generateur {
+      width: 350px;
+      font-size: 25px;
+    }
+
+    .button_accueil{
+      width: 370px;
+      font-size: 25px;
     }
   }
   
