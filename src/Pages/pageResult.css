@@ -55,7 +55,7 @@ img {
   background-color: white;
   -webkit-box-shadow: 5px 5px 15px 3px #000000; 
   box-shadow: 5px 5px 15px 3px #000000;
-   border-radius: 14px;
+   border-radius: 25px;
   padding: 10px;
 }
 
@@ -69,13 +69,12 @@ img {
   order: 0;
 margin-bottom: 20px;
   width: 45%;
-  -webkit-box-shadow: 5px 5px 15px 3px #000000; 
+  border-radius: 25px;
   box-shadow: 5px 5px 15px 3px #000000;
 
 }
 
-.button_retour {
-  width: 20%;
+.button_retour {  
     margin: 1em;
     backface-visibility: hidden;
     position: relative;

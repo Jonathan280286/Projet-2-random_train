@@ -21,6 +21,7 @@
   
   .info{
     margin: 10px;
+    font-size: 1.4em;
   }
   
   .resultatsOK {
@@ -44,20 +45,29 @@
       width: 100%;
       padding: 5px 5px;
       color: #FFF;
-      font-size: 28px;
-      text-shadow: 2px 3px rgba(50, 50, 70, 0.5);
+      font-size: 30px;
+      text-shadow: 1px 1px rgba(50, 50, 70, 0.5);
       text-align: center;
       box-shadow: 2px 3px rgba(0, 0, 0, 0.2);
   }
   
   .weather {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: 10px;
     
   }
   
   .firefox {
    height: 30px;
    width: 30px;
+  }
+
+  .humidity {
+    font-size: 1.4em;
+  }
+
+  .maxmin {
+    font-size: 0.8em;
   }
