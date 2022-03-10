@@ -1,0 +1,17 @@
+h1{
+    color:white;
+}
+
+.footer{
+    width: 100%;
+   
+    background-color: rgb(238, 235, 235);
+    margin-top: 200px;
+}
+
+.footer_color{
+    color:black;
+    text-decoration:none;
+    padding-left: 20px;
+    
+}

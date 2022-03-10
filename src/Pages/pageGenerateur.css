@@ -1,0 +1,132 @@
+.button_accueil {
+  
+    margin: 1em;
+    backface-visibility: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    background: linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20.1%,#fff 25%,#f0f0f0 26%,#fff 28.000000000000004%,#ddd 55.00000000000001%,#eee 100%);
+    border-radius: 100px;
+    border: 1px solid #999;
+    border-width: 1px 1px 1px 1px;
+    padding: 5px 20px 7px 20px;
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,0.25),0px 0px 2px 4px rgba(0,0,0,0.1);
+    color: grey;
+    text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+    font-size: 2em;
+    }
+    .button_accueil > div {
+      color: #fff;
+    font-weight: initial;
+    font-style: normal;
+    text-align: center;
+    margin: 0px 0px 0px 0px
+    }
+    .button_accueil > i {
+      font-size: 1em;
+    border-radius: 0px;
+    border: 0px solid transparent;
+    border-width: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    position: static
+    }
+    .button_accueil > .ld {
+      font-size: initial
+    }
+
+    .button_generateur {
+      
+        margin: 1em;
+        backface-visibility: hidden;
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        white-space: nowrap;
+        background: linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20.1%,#fff 25%,#f0f0f0 26%,#fff 28.000000000000004%,#ddd 55.00000000000001%,#eee 100%);
+        border-radius: 100px;
+        border: 1px solid #999;
+        border-width: 1px 1px 1px 1px;
+        padding: 5px 20px 7px 20px;
+        box-shadow: 0px 2px 2px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,0.25),0px 0px 2px 4px rgba(0,0,0,0.1);
+        color: #0088CE;
+        text-shadow: 0px 2px 1px rgba(0,0,0,0.3);
+        font-size: 2em;
+        }
+        .button_generateur > div {
+          color: #fff;
+        font-weight: initial;
+        font-style: normal;
+        text-align: center;
+        margin: 0px 0px 0px 0px
+        }
+        .button_generateur> i {
+          font-size: 1em;
+        border-radius: 0px;
+        border: 0px solid transparent;
+        border-width: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+        position: static
+        }
+        .button_generateur > .ld {
+          font-size: initial
+        }
+
+
+  
+    #imageVille{
+      position: relative;
+     text-align: center;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      opacity: 0.8;
+    }
+    #circle{
+      display:none
+    }
+
+    .gare_depart{
+      margin-bottom: 20px;
+      text-align: center;
+      font-size: 2.5em;
+      color: #479bd3;
+    }
+
+    .container_generateur{
+      margin-left: auto;
+      margin-right: auto;      
+      /* border : 1px solid green;       */
+      width: 60%;     
+    
+     
+     
+      background-color: white;
+      padding: 10px;
+      -webkit-box-shadow: 5px 5px 15px 3px #000000; 
+      box-shadow: 5px 5px 15px 3px #000000;
+       border-radius: 14px;
+    }
+  
+/* Medium devices (tablets, 999px)*/
+@media (max-width: 1200px) {
+    .button {
+      width: 90%;
+      font-size: 1.5em;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .button_generateur {
+      width: 350px;
+      font-size: 25px;
+    }
+
+    .button_accueil{
+      width: 370px;
+      font-size: 25px;
+    }
+  }
+  

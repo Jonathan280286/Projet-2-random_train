@@ -1,0 +1,122 @@
+.codeGare{
+    margin-top: 10px;
+    text-align: center;
+}
+select{
+    margin-top: 30px;
+}
+.container_accueil{
+    display: flex;
+}
+.item__accueil__logo{
+display: block;
+text-align: center;
+width: 45%;
+/* border: 3px solid red; */
+}
+
+.items_accueil__carte{
+    margin-top: 10px;
+    display: block;
+width: 55%;
+/* border: 1px solid blue; */
+}
+
+.logoSncf{
+    width: 20%;
+}
+.container_logo{
+    margin-top: 50px;
+    width: 100%;
+}
+.image-carte{
+    max-width: 100%;
+    height: auto;
+}
+
+.accueil__logo{
+    margin: 30px 0 100px 0;
+}
+
+img{
+width: 800px;   
+}
+
+.accueil__select{
+margin-left: 20px;
+
+}
+
+label{
+    font-size: 3em;
+    color: #747678;
+}
+
+.texte{
+    font-size: 1.7em;
+    margin-top: 30px;
+    color:#0088CE;
+}
+
+.choississez{
+    color:#0088CE; ;
+}
+    
+#select-city{
+    font-size: 2em;
+    background: linear-gradient(110deg,#eee 0%,#e3e3e3 10%,#fff 20.1%,#fff 25%,#f0f0f0 26%,#fff 28.000000000000004%,#ddd 55.00000000000001%,#eee 100%);
+    color: #0088CE;
+    width: 60%;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 30px; 
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px grey;
+}
+
+@media screen and (max-width: 1100px){ 
+
+    .item__accueil__logo{
+        width: 100%;
+        display: block;
+        align-items: center;
+     
+    }
+
+    .image-carte{
+        display: none;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;   
+        }
+
+    .container_accueil{
+        display: block;
+        margin: auto ;
+    }
+   
+
+    .accueil__logo{
+        margin: 20px 0 200px 0;
+    }
+    #select-city{
+        font-size: 1.2em;
+        width: 65%;
+    }
+
+ 
+
+label{
+    padding-bottom: 40px;
+    font-size: 2em;
+}   
+    .items_accueil__carte{
+width: 100%;
+    }
+}
+
+
+
+
