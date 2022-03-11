@@ -67,7 +67,7 @@ function MeteoResult(props) {
             </div>
             <p className='humidity'>Humidité : {weatherData.main.humidity}%</p>
             <p className='pressure'>{weatherData.main.pressure} Hpa</p>
-        <p className='weather'>{weatherData.weather[0].main.replace("Clear","☀️ Soleil ☀️").replace("Clouds","☁️ Nuageux ☁️").replace("Sunny","Soleil").replace("Rain","Pluie 🌧").replace("Snow","☃️ Neige ❄️").replace("Drizzle","🌨 Bruine 🌨")}</p>
+        <p className='weather'>{weatherData.weather[0].main.replace("Clear","☀️ Soleil ☀️").replace("Clouds","☁️ Nuageux ☁️").replace("Sunny","☀️ Soleil ☀️").replace("Rain","🌧 Pluie 🌧").replace("Snow","☃️ Neige ❄️").replace("Drizzle","🌨 Bruine 🌨")}</p>
       </div>
     )
     }
