@@ -17,14 +17,14 @@
     font-size: 2em;
     }
     .button_accueil > div {
-      color: #fff;
+    color: #fff;
     font-weight: initial;
     font-style: normal;
     text-align: center;
     margin: 0px 0px 0px 0px
     }
     .button_accueil > i {
-      font-size: 1em;
+    font-size: 1em;
     border-radius: 0px;
     border: 0px solid transparent;
     border-width: 0px 0px 0px 0px;
@@ -55,14 +55,14 @@
         font-size: 2em;
         }
         .button_generateur > div {
-          color: #fff;
+        color: #fff;
         font-weight: initial;
         font-style: normal;
         text-align: center;
         margin: 0px 0px 0px 0px
         }
         .button_generateur> i {
-          font-size: 1em;
+        font-size: 1em;
         border-radius: 0px;
         border: 0px solid transparent;
         border-width: 0px 0px 0px 0px;
@@ -110,23 +110,41 @@
        border-radius: 14px;
     }
   
-/* Medium devices (tablets, 999px)*/
+/* Medium devices (tablets, 1200px)*/
 @media (max-width: 1200px) {
     .button {
       width: 90%;
       font-size: 1.5em;
     }
+    .order{
+      display: flex;
+          flex-direction: column-reverse;
+          }
+          .container_generateur{
+            width: 70%;
+          }
   }
 
+  /* Medium devices (tablets, 900px)*/
   @media (max-width: 900px) {
     .button_generateur {
       width: 350px;
       font-size: 25px;
+    
     }
 
     .button_accueil{
       width: 370px;
-      font-size: 25px;
+      font-size: 25px;  
     }
+    .order{
+  display: flex;
+      flex-direction: column-reverse;
+      }
+
+      .container_generateur{
+        width: 80%;
+      }
+      
   }
-  
+
